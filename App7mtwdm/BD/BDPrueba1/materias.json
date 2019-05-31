@@ -1,0 +1,14 @@
+[
+{ 
+    "_id" : ObjectId("5b646e80f36df089744af08a"), 
+    "nombre" : "Desarrollo de iOS"
+},
+{ 
+    "_id" : ObjectId("5b646e92f36df089744af092"), 
+    "nombre" : "Desarrollo de Android"
+},
+{ 
+    "_id" : ObjectId("5b646ecaf36df089744af0a6"), 
+    "nombre" : "Desarrollo de UWP"
+}
+]

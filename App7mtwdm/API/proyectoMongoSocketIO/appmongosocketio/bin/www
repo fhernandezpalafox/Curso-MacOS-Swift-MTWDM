@@ -1,0 +1,156 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('appmongosocketio:server');
+var http = require('http');
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+
+//Añadir codigo de socketIO
+var io  = require("socket.io")(server);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+
+// lodash
+
+// Load the full build.
+var _ = require('lodash');
+// Load the core build.
+var _ = require('lodash/core');
+// Load the FP build for immutable auto-curried iteratee-first data-last methods.
+var fp = require('lodash/fp');
+
+
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
+
+
+var usuariosLogeados = [];
+var personas = [];
+
+io.sockets.on("connection", function(socket){
+
+     //cuando el cliente emita su usuario
+  socket.on("agrega usuario", function(usuario){
+
+    usuariosLogeados.push(usuario); // se aguarda en el arreglo
+
+    io.sockets.emit("usuarioLogeado",usuario);
+
+    io.sockets.emit("usuarios",usuariosLogeados); 
+    //emitimos a los demas usuarios cuando se conecte
+
+
+    //agregar un persona
+    socket.on("agregar persona", function(usuario, persona){
+
+      personas.push(persona);
+
+      io.sockets.emit("agregar persona",usuario, persona);
+
+      io.sockets.emit("personas",personas);
+    });
+
+    /*socket.on("modificar persona", function(usuario, persona, id){
+
+      //personas.push(persona);
+     var resultado = _.find(personas, { 'id': persona.id});
+
+      io.sockets.emit("modificar persona",usuario, persona);
+
+      io.sockets.emit("personas",personas);
+    });*/
+
+  });
+
+
+  //cuando un usuario se desconecte, se elimina su respectivo usuario de nuestro arreglo y los emitimos a todos los demas
+  socket.on("disconnect", function(socket){
+
+    usuariosLogeados.splice(usuariosLogeados.indexOf(usuario), 1);
+
+    io.sockets.emit("usuarios",usuariosLogeados); 
+
+  });
+
+});

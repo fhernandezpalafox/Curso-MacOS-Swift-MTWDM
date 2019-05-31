@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'App6mtwdm' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for App6mtwdm
+  pod 'Socket.IO-Client-Swift', '~> 15.0.0'
+  pod 'macOSThemeKit', '~> 1.2.3'
+  
+end

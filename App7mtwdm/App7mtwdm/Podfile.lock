@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AlamofireObjectMapper (5.2.0):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - macOSThemeKit (1.2.3)
+  - ObjectMapper (3.4.2)
+  - Socket.IO-Client-Swift (15.0.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (~> 5.2)
+  - macOSThemeKit (~> 1.2.3)
+  - Socket.IO-Client-Swift (~> 15.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
+    - macOSThemeKit
+    - ObjectMapper
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  macOSThemeKit: 651af12838675beac5547687226a270c294f8f84
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Socket.IO-Client-Swift: c039a808195d22a7192962841b8c035cb61ea49e
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+
+PODFILE CHECKSUM: 8f24f5d8afbffea21dbf015e255b374411e1346e
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'App7mtwdm' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for App7mtwdm
+  pod 'macOSThemeKit', '~> 1.2.3'
+  pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'Socket.IO-Client-Swift', '~> 15.0.0'
+  
+end

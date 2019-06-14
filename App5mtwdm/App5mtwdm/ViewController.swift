@@ -79,9 +79,9 @@ class ViewController: NSViewController {
     
     override func shouldPerformSegue(withIdentifier identifier: NSStoryboardSegue.Identifier, sender: Any?) -> Bool {
         
-        if identifier.rawValue == "agregar" {
+        if identifier == "agregar" {
             return true
-        }else if identifier.rawValue == "editar"{
+        }else if identifier == "editar"{
 
                 let row = Tabla.selectedRow
                 
@@ -104,12 +104,12 @@ class ViewController: NSViewController {
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         
-        if segue.identifier?.rawValue == "agregar"{
+        if segue.identifier == "agregar"{
             let vc  = segue.destinationController as! FormularioViewController
             vc.viewController  =  self
             vc.esModificacion = false
             
-        }else if segue.identifier?.rawValue == "editar"{
+        }else if segue.identifier == "editar"{
             let vc  = segue.destinationController as! FormularioViewController
             vc.viewController  =  self
             vc.esModificacion = true

@@ -11,9 +11,6 @@ import Cocoa
 class ViewController: NSViewController {
 
     
-    
-    @IBOutlet var lblRespuesta2: NSTouchBarItem!
-    
     @IBOutlet weak var lblRespuesta: NSTextField!
     
     
@@ -39,7 +36,7 @@ class ViewController: NSViewController {
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         
-        if segue.identifier?.rawValue == "custom" {
+        if segue.identifier == "custom" {
             
             let vc  =  segue.destinationController as! CustomViewcontroller
             vc.viewController  =  self

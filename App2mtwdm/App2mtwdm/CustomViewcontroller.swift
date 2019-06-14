@@ -21,14 +21,14 @@ class CustomViewcontroller: NSViewController {
     
     
     @IBAction func onAceptar(_ sender: Any) {
-        dismissViewController(self)
+        dismiss(self)
         
         viewController.mandarRespuesta(respuesta: "Aceptar")
     }
     
     
     @IBAction func onCancelar(_ sender: Any) {
-        dismissViewController(self)
+        dismiss(self)
         
         viewController.mandarRespuesta(respuesta: "Cancelar")
     }

@@ -42,7 +42,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         
-        if segue.identifier?.rawValue  == "mostrar1"{
+        if segue.identifier  == "mostrar1"{
             
             let row: Int =  self.Tabla.selectedRow
             

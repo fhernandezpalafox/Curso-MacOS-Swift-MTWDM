@@ -67,7 +67,7 @@ class FormularioViewController: NSViewController {
     }
     
     func CerrarPantalla() {
-         dismissViewController(self)
+         dismiss(self)
     }
     
     override func viewDidLoad() {

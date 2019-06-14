@@ -28,13 +28,16 @@ class ViewController: NSViewController {
        
     }
     
+    
+    
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         
-        if segue.identifier?.rawValue == "segundaVentana"{
+        if segue.identifier == "segundaVentana"{
             
             let vc =  segue.destinationController as! SaludoViewController
             
             vc.datoRecibido = txtDato.stringValue
+            datoRecibido2  = " Como estas?"
         }
     }
 

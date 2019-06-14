@@ -8,6 +8,8 @@
 
 import Cocoa
 
+var datoRecibido2 : String = ""
+
 class SaludoViewController: NSViewController {
 
     var datoRecibido : String  = ""
@@ -19,7 +21,7 @@ class SaludoViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
         
-        lblDatoRecibido.stringValue  = " Este dato lo estoy recibiendo desde la otra view controller \(datoRecibido)"
+        lblDatoRecibido.stringValue  = " Este dato lo estoy recibiendo desde la otra view controller \(datoRecibido) \(datoRecibido2)"
         
         lblDatoRecibido.sizeToFit()
         

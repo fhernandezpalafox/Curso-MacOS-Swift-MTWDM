@@ -40,6 +40,7 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         
     }
     
+    
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         
         if segue.identifier  == "mostrar1"{
@@ -56,9 +57,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
             }else {
                 print("Error")
             }
-            
-            
-          
         }
     }
     
@@ -82,7 +80,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         txtNombre.stringValue = ""
         txtDomicilio.stringValue = ""
         chkEdoCivil.intValue = 0
-        //chkEdoCivil.state = NSControl.StateValue(rawValue: 0) //=0
         txtPerfilface.stringValue = ""
         
     }
@@ -124,12 +121,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         //Recargar la tabla
         Tabla.reloadData()
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
     
     
     func numberOfRows(in tableView: NSTableView) -> Int {
@@ -147,13 +138,6 @@ class ViewController: NSViewController, NSTableViewDataSource, NSTableViewDelega
         return columna
         
     }
-    
-    
-    /*func tableViewSelectionDidChange(_ notification: Notification) {
-        
-        print(notification)
-        print("Se le dio click")
-    }*/
     
     
     

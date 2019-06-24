@@ -23,7 +23,9 @@ class BrowserViewController: NSViewController, WKNavigationDelegate {
         
         let urlPerfil  = objPersona.Perfil
         
-        let url  =  URL(string: urlPerfil)
+        var pagina  = "http://\(urlPerfil)"
+        
+        let url  =  URL(string: pagina)
         
         let request  =  URLRequest(url: url!)
         
@@ -35,7 +37,7 @@ class BrowserViewController: NSViewController, WKNavigationDelegate {
         
     }
     
-    
+
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         
         indicador.isHidden =  false

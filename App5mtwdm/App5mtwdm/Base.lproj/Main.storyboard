@@ -735,14 +735,14 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="Nombre" id="1Xb-PE-F4V">
+                                                        <tableCellView id="5iT-bJ-5zZ">
                                                             <rect key="frame" x="1" y="1" width="116" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQ9-uE-5Ut">
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="grW-cg-QVp">
                                                                     <rect key="frame" x="0.0" y="0.0" width="116" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="Ygl-yv-9mc">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="BQe-Ls-Z0B">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -750,7 +750,7 @@
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
-                                                                <outlet property="textField" destination="BQ9-uE-5Ut" id="Nhg-9K-4Br"/>
+                                                                <outlet property="textField" destination="grW-cg-QVp" id="wSa-PS-7Rh"/>
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -768,14 +768,14 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="Escolaridad" id="rux-C0-CDd">
+                                                        <tableCellView id="S94-tv-tpm">
                                                             <rect key="frame" x="120" y="1" width="201" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iQM-wf-p8a">
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P2g-r0-Zxq">
                                                                     <rect key="frame" x="0.0" y="0.0" width="201" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="QIR-fF-mBW">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="SNJ-zX-n9e">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -783,7 +783,7 @@
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
-                                                                <outlet property="textField" destination="iQM-wf-p8a" id="xKw-gu-wb9"/>
+                                                                <outlet property="textField" destination="P2g-r0-Zxq" id="vAZ-7b-JPY"/>
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -801,14 +801,14 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="EdoCivil" id="aA6-xh-BAV">
+                                                        <tableCellView id="TgM-wF-Hnd">
                                                             <rect key="frame" x="324" y="1" width="239" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Jc-hE-gBf">
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ohq-G7-HgF">
                                                                     <rect key="frame" x="0.0" y="0.0" width="239" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="nSF-Ny-9eM">
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="utz-Zl-v82">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -816,7 +816,7 @@
                                                                 </textField>
                                                             </subviews>
                                                             <connections>
-                                                                <outlet property="textField" destination="6Jc-hE-gBf" id="wn1-9F-JRv"/>
+                                                                <outlet property="textField" destination="Ohq-G7-HgF" id="ddE-GC-W9G"/>
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -889,7 +889,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.5" y="729.5"/>
+            <point key="canvasLocation" x="76" y="773"/>
         </scene>
         <!--Formulario View Controller-->
         <scene sceneID="TAK-Td-U4P">
@@ -941,7 +941,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LdB-BC-tnR">
                                 <rect key="frame" x="110" y="121" width="274" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="29" tickMarkPosition="above" sliderType="linear" id="ulS-ps-R8o"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="30" tickMarkPosition="above" sliderType="linear" id="ulS-ps-R8o"/>
                                 <connections>
                                     <action selector="onCambiarEdad:" target="Bbo-Be-MDT" id="jDe-Tb-PwS"/>
                                 </connections>
@@ -958,7 +958,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PTN-EF-A8X">
                                 <rect key="frame" x="151" y="98" width="141" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Edad capturada es: 29" id="Mou-qH-igP">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Edad capturada es: 30" id="Mou-qH-igP">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1035,7 +1035,7 @@
                 </viewController>
                 <customObject id="Mr7-0u-bGJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="569"/>
+            <point key="canvasLocation" x="764" y="483"/>
         </scene>
     </scenes>
     <resources>
@@ -1044,6 +1044,6 @@
         <image name="NSRevealFreestandingTemplate" width="14" height="14"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iqX-dV-x2u"/>
+        <segue reference="S21-2U-WyX"/>
     </inferredMetricsTieBreakers>
 </document>

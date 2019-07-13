@@ -33,5 +33,9 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
 </dict>
 </plist>

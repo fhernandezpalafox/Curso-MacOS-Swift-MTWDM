@@ -41,13 +41,6 @@ class ViewController: NSViewController {
             
         
     }
-    
-    
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
 
      //Agregar  o Editar
     func RecibirInformacion(person: Persona,row : Int = -1)  {
@@ -68,6 +61,7 @@ class ViewController: NSViewController {
         CargarDatos()
  
     }
+    
     
     func CargarDatos() {
         
@@ -157,8 +151,6 @@ extension ViewController : NSTableViewDataSource,NSTableViewDelegate {
 
         return myCell
     }
-    
-    
     
 }
 

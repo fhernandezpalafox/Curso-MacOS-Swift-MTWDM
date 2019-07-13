@@ -18,9 +18,11 @@ class Persona: NSObject {
     
    override init(){}
     
-    init(_nombre:String, _ColorSeleccionado:NSColor,
-         _edad:Int32, _EdoCivil:Int, _escolaridad:Int
-         ) {
+    init(_nombre:String,
+         _ColorSeleccionado:NSColor,
+         _edad:Int32,
+         _EdoCivil:Int,
+         _escolaridad:Int) {
         Nombre  = _nombre
         ColorSeleccionado  = _ColorSeleccionado
         Edad = _edad

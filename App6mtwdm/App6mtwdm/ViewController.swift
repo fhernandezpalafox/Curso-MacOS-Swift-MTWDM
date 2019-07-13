@@ -56,12 +56,6 @@ class ViewController: NSViewController {
     }
     
     
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-    
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "chat" {

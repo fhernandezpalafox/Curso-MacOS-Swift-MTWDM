@@ -39,8 +39,6 @@ class ChatViewController: NSViewController {
 
    let manager  =  SocketManager(socketURL: URL(string: "https://socket-io-chat.now.sh/")!, config: [.log(true), .compress])
     
-  
-    
     var nombre : String = ""
     
     var numeroUsuarios = 0
